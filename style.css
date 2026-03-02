@@ -52,12 +52,10 @@ body {
 .hero h1 {
     font-size: 2.6rem;
     font-weight: 800;
-    letter-spacing: 1px;
 }
 
 .hero h2 {
     font-size: 1.2rem;
-    font-weight: 500;
     opacity: 0.85;
     margin-top: 6px;
 }
@@ -68,14 +66,33 @@ body {
     color: #c7d2fe;
 }
 
-.info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
+/* Social links */
+.socials {
     margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
     font-size: 0.9rem;
+}
+
+.socials a,
+.socials span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #e0e7ff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.35);
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    transform: translateY(-3px);
+    background: rgba(99,102,241,0.3);
 }
 
 /* Sections */
